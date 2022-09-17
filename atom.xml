@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://liubox0916.github.io</id>
+    <title>LBX的博客</title>
+    <updated>2022-09-17T14:22:23.467Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://liubox0916.github.io"/>
+    <link rel="self" href="https://liubox0916.github.io/atom.xml"/>
+    <subtitle>折腾不息，生命不止</subtitle>
+    <logo>https://liubox0916.github.io/images/avatar.png</logo>
+    <icon>https://liubox0916.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2022, LBX的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[古建筑照片]]></title>
+        <id>https://liubox0916.github.io/post/gu-jian-zhu-zhao-pian/</id>
+        <link href="https://liubox0916.github.io/post/gu-jian-zhu-zhao-pian/">
+        </link>
+        <updated>2022-09-15T07:07:06.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>本文长期更新，<strong>不定期收集</strong>各种古建筑照片</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>本文长期更新，<strong>不定期收集</strong>各种古建筑照片</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2022《开学第一课》读后感（瞎写的了属于是）]]></title>
+        <id>https://liubox0916.github.io/post/2022lesslesskai-xue-di-yi-ke-greatergreater-du-hou-gan-xia-xie-de-liao-shu-yu-shi/</id>
+        <link href="https://liubox0916.github.io/post/2022lesslesskai-xue-di-yi-ke-greatergreater-du-hou-gan-xia-xie-de-liao-shu-yu-shi/">
+        </link>
+        <updated>2022-09-15T06:55:40.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p><mark>本篇作文<strong>纯属凑数</strong>以及测试，<strong>并非本人真实水平</strong></mark></p>
+</blockquote>
+<p>伴随着一阵悦耳动听的伴奏，我又迎来了新的学期。《开学第一课》，好久不见，又一次心潮久久未能平静……</p>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p><mark>本篇作文<strong>纯属凑数</strong>以及测试，<strong>并非本人真实水平</strong></mark></p>
+</blockquote>
+<p>伴随着一阵悦耳动听的伴奏，我又迎来了新的学期。《开学第一课》，好久不见，又一次心潮久久未能平静……</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[进行一下样式测试]]></title>
+        <id>https://liubox0916.github.io/post/jin-xing-yi-xia-yang-shi-ce-shi/</id>
+        <link href="https://liubox0916.github.io/post/jin-xing-yi-xia-yang-shi-ce-shi/">
+        </link>
+        <updated>2022-09-14T04:57:59.000Z</updated>
+        <summary type="html"><![CDATA[<p><s>删除线</s></p>
+<h1 id="一级标题">一级标题</h1>
+<h2 id="二级标题">二级标题</h2>
+]]></summary>
+        <content type="html"><![CDATA[<p><s>删除线</s></p>
+<h1 id="一级标题">一级标题</h1>
+<h2 id="二级标题">二级标题</h2>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>https://liubox0916.github.io/post/hello-gridea/</id>
+        <link href="https://liubox0916.github.io/post/hello-gridea/">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></content>
+    </entry>
+</feed>

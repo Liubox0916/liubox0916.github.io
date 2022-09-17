@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>进行一下样式测试 | LBX的博客</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://liubox0916.github.io/favicon.ico?v=1663424539854">
+<link rel="stylesheet" href="https://liubox0916.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CB64N6PWKK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CB64N6PWKK');
+</script>
+
+
+    <meta name="description" content="删除线
+一级标题
+二级标题
+
+三级标题
+四级标题
+五级标题
+六级标题
+粗体
+斜体
+
+
+
+表格
+表格
+
+
+
+
+
+
+
+
+
+
+引用
+啦啦啦
+
+#include&lt;iostream&gt;
+using namespace std;
+int ma..." />
+    <meta name="keywords" content="test" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://liubox0916.github.io">
+        <img src="https://liubox0916.github.io/images/avatar.png?v=1663424539854" class="site-logo">
+        <h1 class="site-title">LBX的博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/Liubox0916/" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+          <a class="social-link" href="https://twitter.com/liubox091221" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      折腾不息，生命不止
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea和它的小伙伴们</a> | <a class="rss" href="https://liubox0916.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">进行一下样式测试</h2>
+            <div class="post-date">2022-09-14</div>
+            
+              <div class="feature-container" style="background-image: url('https://liubox0916.github.io/post-images/jin-xing-yi-xia-yang-shi-ce-shi.jpg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p><s>删除线</s></p>
+<h1 id="一级标题">一级标题</h1>
+<h2 id="二级标题">二级标题</h2>
+<!-- more -->
+<h3 id="三级标题">三级标题</h3>
+<h4 id="四级标题">四级标题</h4>
+<h5 id="五级标题">五级标题</h5>
+<h6 id="六级标题">六级标题</h6>
+<p><strong>粗体</strong></p>
+<p><em>斜体</em></p>
+<table>
+<thead>
+<tr>
+<th>表格</th>
+<th>表格</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>引用</p>
+<p>啦啦啦</p>
+</blockquote>
+<pre><code class="language-c++">#include&lt;iostream&gt;
+using namespace std;
+int main(){
+	int x,y,k;
+	cin&gt;&gt;x&gt;&gt;y&gt;&gt;k;
+	int ai,xi,bi,yi;
+	int count=0,flag=0,ans=0;
+	if(x==y){
+		cout&lt;&lt;0;
+		return 0;
+	}
+	while(k--){
+		cin&gt;&gt;ai&gt;&gt;xi&gt;&gt;bi&gt;&gt;yi;	
+		if(ai==1){
+			x+=xi;
+		}
+		else if(ai==-1){
+			x-=xi;
+			if(x&lt;0){
+				x=0;
+			}
+			}
+			if(bi==1){
+				y+=yi;
+			}
+			else if(bi==-1){
+				y-=yi;
+				if(y&lt;0){
+				y=0;
+				}
+			}
+			count++;
+			if (x==y&amp;&amp;!flag){
+				ans=count;
+				flag=1;
+			}
+		} 
+		if(flag){
+			cout&lt;&lt;ans;
+		}
+		else{
+			cout&lt;&lt;-1;	
+		}	
+	return 0;
+} 
+</code></pre>
+<ol>
+<li>啦啦啦😄</li>
+<li>啦啦啦😢</li>
+<li>啦啦啦🦀</li>
+</ol>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://liubox0916.github.io/tag/SbH7umJLl/" class="tag">
+                    test
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://liubox0916.github.io/post/hello-gridea/">
+                  <h3 class="post-title">
+                    Hello Gridea
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '92ea1924a78e14d0ebaa',
+        clientSecret: '92e8070ec22f696e9b833930dd0ab4848dc611c9',
+        repo: 'liubox0916.github.io',
+        owner: 'Liubox0916',
+        admin: ['Liubox0916'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
