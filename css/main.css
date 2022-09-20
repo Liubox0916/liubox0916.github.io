@@ -847,7 +847,7 @@ i.iconfont {
   --post-heading-color: #1a202c;
   --post-link-color: #274dae;
   --link-hover-color: #fdb348;
-  --link-hover-bg-color: #01327b;
+  --link-hover-bg-color: #DCDCDC;
   --line-color: #eaecef;
   --navbar-bg-color: #01327b;
   --navbar-text-color: #ffffff;
@@ -872,7 +872,7 @@ i.iconfont {
     --post-heading-color: #c4c6c9;
     --post-link-color: #0d359e;
     --link-hover-color: #ffc048;
-    --link-hover-bg-color: #0c2160;
+    --link-hover-bg-color: #696969;
     --line-color: #435266;
     --navbar-bg-color: #0c2160;
     --navbar-text-color: #d0d0d0;
@@ -923,7 +923,7 @@ i.iconfont {
   --post-heading-color: #c4c6c9;
   --post-link-color: #0d359e;
   --link-hover-color: #ffc048;
-  --link-hover-bg-color: #0c2160;
+  --link-hover-bg-color: #696969;
   --line-color: #435266;
   --navbar-bg-color: #0c2160;
   --navbar-text-color: #d0d0d0;
