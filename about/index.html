@@ -46,6 +46,8 @@
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
+  <link  rel="stylesheet" href="https://lib.baomitu.com/KaTeX/0.16.2/katex.min.css" />
+
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -315,7 +317,7 @@
 <h2 id="⛹-兴趣爱好"><a href="#⛹-兴趣爱好" class="headerlink" title="⛹ 兴趣爱好"></a>⛹ 兴趣爱好</h2><p>还能是啥，电脑呗（大喜），我还喜欢读书，尤其是《三体》一类的<strong>科幻小说</strong></p>
 <h2 id="📬-联系我呀"><a href="#📬-联系我呀" class="headerlink" title="📬 联系我呀"></a>📬 联系我呀</h2><p>邮箱:</p>
 <blockquote>
-<p><a href="mailto:&#x6c;&#x69;&#117;&#x62;&#x6f;&#x78;&#x30;&#x39;&#x31;&#50;&#50;&#x31;&#64;&#x67;&#109;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#109;">&#x6c;&#x69;&#117;&#x62;&#x6f;&#x78;&#x30;&#x39;&#x31;&#50;&#50;&#x31;&#64;&#x67;&#109;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#109;</a></p>
+<p><a href="mailto:&#108;&#x69;&#117;&#x62;&#111;&#x78;&#x30;&#x39;&#x31;&#x32;&#x32;&#49;&#x40;&#x67;&#x6d;&#x61;&#105;&#108;&#46;&#x63;&#111;&#109;">&#108;&#x69;&#117;&#x62;&#111;&#x78;&#x30;&#x39;&#x31;&#x32;&#x32;&#49;&#x40;&#x67;&#x6d;&#x61;&#105;&#108;&#46;&#x63;&#111;&#109;</a></p>
 </blockquote>
 
   </div>
@@ -373,6 +375,24 @@
 
   
 
+
+  
+  
+
+
+
+
+  <script>
+  Fluid.utils.createScript('https://lib.baomitu.com/mermaid/8.14.0/mermaid.min.js', function() {
+    mermaid.initialize({"theme":"default"});
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('mermaid' in window) {
+        mermaid.init();
+      }
+    });
+  });
+</script>
 
 
 
