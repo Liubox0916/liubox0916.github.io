@@ -503,6 +503,8 @@ int main(){
 
 虽然标题说的是**组建ChatGPT工作台的故事**，但实际上本篇文章会推荐一些有趣的**ChatGPT应用**和讲述它们的**配置方法。**
 
+<!-- more -->
+
 > **ChatGPT**，全称**聊天生成预训练转换器** **（英语Chat** **G**enerative **P**re-trained **T**ransformer [^1]），是[OpenAI](https://zh.wikipedia.org/wiki/OpenAI "OpenAI")开发的[人工智能](https://zh.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD "人工智能")[聊天机器人](https://zh.wikipedia.org/wiki/%E8%81%8A%E5%A4%A9%E6%A9%9F%E5%99%A8%E4%BA%BA "聊天机器人")程序，于2022年11月推出。该程序使用基于[GPT-3.5](https://zh.wikipedia.org/wiki/GPT-3 "GPT-3")、[GPT-4](https://zh.wikipedia.org/wiki/GPT-4 "GPT-4")架构的[大型语言模型](https://zh.wikipedia.org/w/index.php?title=%E5%A4%A7%E5%9E%8B%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B\&action=edit\&redlink=1)并以[强化学习](https://zh.wikipedia.org/wiki/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0 "强化学习")训练。ChatGPT目前仍以文字方式交互，而除了可以用人类自然对话方式来交互，还可以用于甚为复杂的语言工作，包括自动生成[文本](https://zh.wikipedia.org/wiki/%E6%96%87%E6%9C%AC "文本")、自动问答、自动[摘要](https://zh.wikipedia.org/wiki/%E6%91%98%E8%A6%81 "摘要")等多种任务。
 
 维基百科如是说。
