@@ -267,235 +267,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>//2022/hello-world/</url>
-    <content><![CDATA[Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
-
-<!-- more -->
-
-## Quick Start
-
-### Create a new post
-
-``` bash
-$ hexo new "My New Post"
-```
-
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
-]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>加密测试</title>
-    <url>//2022/jia-mi-ce-shi/</url>
-    <content><![CDATA[
-114514
-
-1919810
-]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-      <tags>
-        <tag>test</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>古建筑照片</title>
-    <url>//2022/gu-jian-zhu-zhao-pian/</url>
-    <content><![CDATA[> 本文长期更新，**不定期收集**各种古建筑照片
-
-<!-- more -->
-
-## 2022-9-15 15:06 更新
-
-![大栅栏古建筑图片1](/img/1663225745489.jpg)
-
-![大栅栏古建筑图片2](/img/1663225750904.jpg)
-
-![大栅栏古建筑图片3](/img/1663225765041.jpg)
-
----
-
-## 2022-9-15 21:06 更新
-
-![大栅栏古建筑图片4](/img/1663247294180.jpg)
-
-![大栅栏古建筑图片5](/img/1663248034441.jpg)
-
-![大栅栏古建筑图片6](/img/1663248054125.jpg)
-
-![大栅栏古建筑图片7](/img/1663248388885.jpg)
-
-![大栅栏古建筑图片8](/img/1663248409483.jpg)
-
-![大栅栏古建筑图片9](/img/1663248459559.jpg)
-
-![大栅栏古建筑图片10](/img/1663248483161.jpg)
-
-![大栅栏古建筑图片11](/img/1663248513466.jpg)
-
-![大栅栏古建筑图片12](/img/1663248522119.jpg)]]></content>
-      <categories>
-        <category>照片</category>
-      </categories>
-      <tags>
-        <tag>古建筑</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>进行一下样式测试</title>
-    <url>//2022/jin-xing-yi-xia-yang-shi-ce-shi/</url>
-    <content><![CDATA[
-~~删除线~~
-
-<mark>高亮</mark>
-
-# 一级标题
-
-## 二级标题
-
-<!-- more -->
-
-### 三级标题
-
-#### 四级标题
-
-##### 五级标题
-
-###### 六级标题
-
-**粗体**
-
-*斜体*
-
-<a class="btn" href="https://liubox0916.github.io/liubox091221.github.io/img/md.jpg" title="title">按钮</a>
-
-<span class="label label-primary">Label</span>
-
-<p class="note note-primary">标签</p>
-
-| 表格 | 表格 |
-| ---- | ---- |
-|      |      |
-
-> 引用
->
-> 啦啦啦
-
-```c++
-#include<iostream>
-using namespace std;
-int main(){
-	int x,y,k;
-	cin>>x>>y>>k;
-	int ai,xi,bi,yi;
-	int count=0,flag=0,ans=0;
-	if(x==y){
-		cout<<0;
-		return 0;
-	}
-	while(k--){
-		cin>>ai>>xi>>bi>>yi;	
-		if(ai==1){
-			x+=xi;
-		}
-		else if(ai==-1){
-			x-=xi;
-			if(x<0){
-				x=0;
-			}
-			}
-			if(bi==1){
-				y+=yi;
-			}
-			else if(bi==-1){
-				y-=yi;
-				if(y<0){
-				y=0;
-				}
-			}
-			count++;
-			if (x==y&&!flag){
-				ans=count;
-				flag=1;
-			}
-		} 
-		if(flag){
-			cout<<ans;
-		}
-		else{
-			cout<<-1;	
-		}	
-	return 0;
-} 
-```
-
-1. 啦啦啦:smile:
-
-2. 啦啦啦:cry:
-
-3. 啦啦啦:crab:
-
-<iframe src="//player.bilibili.com/player.html?aid=257803599&bvid=BV1BY411N7sr&cid=757465855&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"> </iframe>
-
-
-
-{% tabs First unique name %}
-
-<!-- tab First unique name 1 @ri:home-4-line -->
-
-**This is Tab 1.**
-
-<!-- endtab -->
-
-<!-- tab Icon Test @ri:cloud-line -->
-
-**This is Tab 2.**
-
-<!-- endtab -->
-
-<!-- tab -->
-
-**This is Tab 3.**
-
-<!-- endtab -->
-
-{% endtabs %}]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-      <tags>
-        <tag>test</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>ChatGPT可不是闹着玩的！——关于我组建ChatGPT工作台的故事</title>
     <url>//2023/chatgpt-ke-bu-shi-nao-zhe-wan-de-guan-yu-wo-zu-jian-chatgpt-gong-zuo-tai-de-gu-shi/</url>
     <content><![CDATA[
@@ -679,6 +450,235 @@ int main(){
       </categories>
       <tags>
         <tag>编程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>古建筑照片</title>
+    <url>//2022/gu-jian-zhu-zhao-pian/</url>
+    <content><![CDATA[> 本文长期更新，**不定期收集**各种古建筑照片
+
+<!-- more -->
+
+## 2022-9-15 15:06 更新
+
+![大栅栏古建筑图片1](/img/1663225745489.jpg)
+
+![大栅栏古建筑图片2](/img/1663225750904.jpg)
+
+![大栅栏古建筑图片3](/img/1663225765041.jpg)
+
+---
+
+## 2022-9-15 21:06 更新
+
+![大栅栏古建筑图片4](/img/1663247294180.jpg)
+
+![大栅栏古建筑图片5](/img/1663248034441.jpg)
+
+![大栅栏古建筑图片6](/img/1663248054125.jpg)
+
+![大栅栏古建筑图片7](/img/1663248388885.jpg)
+
+![大栅栏古建筑图片8](/img/1663248409483.jpg)
+
+![大栅栏古建筑图片9](/img/1663248459559.jpg)
+
+![大栅栏古建筑图片10](/img/1663248483161.jpg)
+
+![大栅栏古建筑图片11](/img/1663248513466.jpg)
+
+![大栅栏古建筑图片12](/img/1663248522119.jpg)]]></content>
+      <categories>
+        <category>照片</category>
+      </categories>
+      <tags>
+        <tag>古建筑</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>//2022/hello-world/</url>
+    <content><![CDATA[Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+
+<!-- more -->
+
+## Quick Start
+
+### Create a new post
+
+``` bash
+$ hexo new "My New Post"
+```
+
+More info: [Writing](https://hexo.io/docs/writing.html)
+
+### Run server
+
+``` bash
+$ hexo server
+```
+
+More info: [Server](https://hexo.io/docs/server.html)
+
+### Generate static files
+
+``` bash
+$ hexo generate
+```
+
+More info: [Generating](https://hexo.io/docs/generating.html)
+
+### Deploy to remote sites
+
+``` bash
+$ hexo deploy
+```
+
+More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>加密测试</title>
+    <url>//2022/jia-mi-ce-shi/</url>
+    <content><![CDATA[
+114514
+
+1919810
+]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>进行一下样式测试</title>
+    <url>//2022/jin-xing-yi-xia-yang-shi-ce-shi/</url>
+    <content><![CDATA[
+~~删除线~~
+
+<mark>高亮</mark>
+
+# 一级标题
+
+## 二级标题
+
+<!-- more -->
+
+### 三级标题
+
+#### 四级标题
+
+##### 五级标题
+
+###### 六级标题
+
+**粗体**
+
+*斜体*
+
+<a class="btn" href="https://liubox0916.github.io/liubox091221.github.io/img/md.jpg" title="title">按钮</a>
+
+<span class="label label-primary">Label</span>
+
+<p class="note note-primary">标签</p>
+
+| 表格 | 表格 |
+| ---- | ---- |
+|      |      |
+
+> 引用
+>
+> 啦啦啦
+
+```c++
+#include<iostream>
+using namespace std;
+int main(){
+	int x,y,k;
+	cin>>x>>y>>k;
+	int ai,xi,bi,yi;
+	int count=0,flag=0,ans=0;
+	if(x==y){
+		cout<<0;
+		return 0;
+	}
+	while(k--){
+		cin>>ai>>xi>>bi>>yi;	
+		if(ai==1){
+			x+=xi;
+		}
+		else if(ai==-1){
+			x-=xi;
+			if(x<0){
+				x=0;
+			}
+			}
+			if(bi==1){
+				y+=yi;
+			}
+			else if(bi==-1){
+				y-=yi;
+				if(y<0){
+				y=0;
+				}
+			}
+			count++;
+			if (x==y&&!flag){
+				ans=count;
+				flag=1;
+			}
+		} 
+		if(flag){
+			cout<<ans;
+		}
+		else{
+			cout<<-1;	
+		}	
+	return 0;
+} 
+```
+
+1. 啦啦啦:smile:
+
+2. 啦啦啦:cry:
+
+3. 啦啦啦:crab:
+
+<iframe src="//player.bilibili.com/player.html?aid=257803599&bvid=BV1BY411N7sr&cid=757465855&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"> </iframe>
+
+
+
+{% tabs First unique name %}
+
+<!-- tab First unique name 1 @ri:home-4-line -->
+
+**This is Tab 1.**
+
+<!-- endtab -->
+
+<!-- tab Icon Test @ri:cloud-line -->
+
+**This is Tab 2.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 3.**
+
+<!-- endtab -->
+
+{% endtabs %}]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>test</tag>
       </tags>
   </entry>
   <entry>
@@ -1141,25 +1141,6 @@ int main(){
 ]]></content>
   </entry>
   <entry>
-    <title>关于本站</title>
-    <url>/about/site.html</url>
-    <content><![CDATA[> 欢迎来到我的小站呀，很高兴遇见你！🤝
-
-## 🏠 关于本站
-
-本站是一个xxs~~不要再问我为什么要打xxs了，只是打习惯了啊啊啊~~一时兴起建的一个博客，因之前的网站**没钱关闭**，所以选择用`Github Pages`再建一个，但是`Gridea`的体验真的一言难尽，所以迁移到更加好用的`Hexo`框架。目前这个网站有很多不足，正在**逐步改进**。]]></content>
-  </entry>
-  <entry>
-    <title>我的小伙伴们</title>
-    <url>/links/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>关于我</title>
     <url>/about/index.html</url>
     <content><![CDATA[
@@ -1177,5 +1158,24 @@ int main(){
 邮箱:
 > liubox091221@gmail.com
 ]]></content>
+  </entry>
+  <entry>
+    <title>关于本站</title>
+    <url>/about/site.html</url>
+    <content><![CDATA[> 欢迎来到我的小站呀，很高兴遇见你！🤝
+
+## 🏠 关于本站
+
+本站是一个xxs~~不要再问我为什么要打xxs了，只是打习惯了啊啊啊~~一时兴起建的一个博客，因之前的网站**没钱关闭**，所以选择用`Github Pages`再建一个，但是`Gridea`的体验真的一言难尽，所以迁移到更加好用的`Hexo`框架。目前这个网站有很多不足，正在**逐步改进**。]]></content>
+  </entry>
+  <entry>
+    <title>我的小伙伴们</title>
+    <url>/links/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
