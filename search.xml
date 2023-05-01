@@ -24,7 +24,8 @@
 
 接着，节目里也播出了许多有趣的内容，但全部都围绕着一个主题：“**保护环境**”。
 
-看完了节目，我的内心久久不能平静。正如节目中说的那样，……在未来的学习生活中，我会尽自己的**最大努力**去**保护，爱护**生态环境！]]></content>
+看完了节目，我的内心久久不能平静。正如节目中说的那样，……在未来的学习生活中，我会尽自己的**最大努力**去**保护，爱护**生态环境！
+]]></content>
       <categories>
         <category>瞎整的</category>
       </categories>
@@ -266,18 +267,159 @@
       </tags>
   </entry>
   <entry>
-    <title>加密测试</title>
-    <url>//2022/jia-mi-ce-shi/</url>
+    <title>ChatGPT可不是闹着玩的！——关于我组建ChatGPT工作台的故事</title>
+    <url>//2023/chatgpt-ke-bu-shi-nao-zhe-wan-de-guan-yu-wo-zu-jian-chatgpt-gong-zuo-tai-de-gu-shi/</url>
     <content><![CDATA[
-114514
+# 前言
 
-1919810
+虽然标题说的是**组建ChatGPT工作台的故事**，但实际上本篇文章会推荐一些有趣的**ChatGPT应用**和讲述它们的**配置方法。**
+
+> **ChatGPT**，全称**聊天生成预训练转换器** **（英语Chat** **G**enerative **P**re-trained **T**ransformer [^1]），是[OpenAI](https://zh.wikipedia.org/wiki/OpenAI "OpenAI")开发的[人工智能](https://zh.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD "人工智能")[聊天机器人](https://zh.wikipedia.org/wiki/%E8%81%8A%E5%A4%A9%E6%A9%9F%E5%99%A8%E4%BA%BA "聊天机器人")程序，于2022年11月推出。该程序使用基于[GPT-3.5](https://zh.wikipedia.org/wiki/GPT-3 "GPT-3")、[GPT-4](https://zh.wikipedia.org/wiki/GPT-4 "GPT-4")架构的[大型语言模型](https://zh.wikipedia.org/w/index.php?title=%E5%A4%A7%E5%9E%8B%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B\&action=edit\&redlink=1)并以[强化学习](https://zh.wikipedia.org/wiki/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0 "强化学习")训练。ChatGPT目前仍以文字方式交互，而除了可以用人类自然对话方式来交互，还可以用于甚为复杂的语言工作，包括自动生成[文本](https://zh.wikipedia.org/wiki/%E6%96%87%E6%9C%AC "文本")、自动问答、自动[摘要](https://zh.wikipedia.org/wiki/%E6%91%98%E8%A6%81 "摘要")等多种任务。
+
+维基百科如是说。
+
+话不多说，让我们一起开始**ChatGPT**的旅程吧😎！
+
+# 第一站——ChatGPT-Next-Web：一个简洁的ChatGPT Web UI
+
+恭喜你来到了第一站🥳现在让我们来看一下它的介绍吧：
+
+> 一键免费部署你的**私人 ChatGPT 网页应用**。
+
+那么它的部署有多么简单呢🤔️下面我们来看一下：
+
+## 错误示范
+
+> 注意⚠️以下内容均为<mark>**错误示例**</mark>，最好**不要尝试**，否则会导致无法更新等问题
+
+~~从前有一个人叫小田所，24岁，事学生。~~
+
+几天前，小田所偶然发现了一个名叫ChatGPT的人工智能聊天机器人🤩
+
+于是，小田所计划去GitHub找一找有没有什么可以快速部署的ChatGPT网页应用👀
+
+于是，小田所发现了[Yidadaa/ChatGPT-Next-Web](https://github.com/Yidadaa/sChatGPT-Next-Web)😎
+
+小田所点击了页面上的这个：
+
+![错误步骤1](/img/wrong_task_1.png)
+
+小田所~~十分甚至九分~~开心的按照指示点击了按钮，来到了下一个页面：
+
+![错误步骤2](/img/wrong_task_2.png)
+
+殊不知，这才是小田所噩梦的开始。
+
+此时的小田所没有意识到事情的严重性，填入了参数，点击了“部署”按钮：
+
+![错误步骤3](/img/wrong_task_3.png)
+
+进入部署的网站后，你看到了几行大字：**无法更新**
+
+![此处无声胜有声](/img/happy_cat.gif)_此处无声胜有声_
+
+## 正确方法
+
+>以下内容为<mark>**正确**</mark>✅，可**放心参考**
+
+~~小田所大声哭泣，”哼哼哼嗯啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊“的声音掩埋了整栋楼。~~
+
+你振作起来，开始使用正确方法：
+
+> ### 提问
+>
+> 请问把ChatGPT-Next-Web正确部署需要几步？
+
+你答对了，正确答案是：<mark>三步</mark>。
+
+那么，**现在开始**吧！
+
+### 步骤
+
+#### fork本项目
+
+![正确步骤1](/img/right_task_1.png)
+
+你要是连`fork`项目都不会，那还来**凑什么热闹**？
+
+#### 在vercel中导入你刚刚fork的项目
+
+![正确步骤2\_1](/img/right_task_2_1.png)
+
+![正确步骤2\_2](/img/right_task_2_2.png)
+
+这个简单，跟着图片**一步一步来**就行
+
+#### 部署
+
+![正确步骤3](/img/right_task_3.png)
+
+填好数据，点按钮**就行了**
+
+## 测试
+
+![测试效果](/img/test_gpt.png)
+
+## 小结
+
+可以从<mark>测试</mark>部分看到ChatGPT的回答**很有条理**🎉，而且本项目的UI也~~非常的好看，非常的美丽~~，因此我非常推荐大家使用此项目。
+
+那么接下来，我们将要去往——**神秘**的第二站。
+
+~~所有系统全部启动启动启动！还有这个！乐迪！~~
+
+~~现在，是飞行✈️时间！~~
+
+[^1]: Roose, Kevin. [The Brilliance and Weirdness of ChatGPT](https://www.nytimes.com/2022/12/05/technology/chatgpt-ai-twitter.html). The New York Times. 2022-12-05 \[2022-12-26]. （原始内容[存档](https://web.archive.org/web/20230118134332/https://www.nytimes.com/2022/12/05/technology/chatgpt-ai-twitter.html)于2023-01-18）.
 ]]></content>
       <categories>
-        <category>测试</category>
+        <category>ChatGPT</category>
       </categories>
       <tags>
-        <tag>test</tag>
+        <tag>编程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>古建筑照片</title>
+    <url>//2022/gu-jian-zhu-zhao-pian/</url>
+    <content><![CDATA[> 本文长期更新，**不定期收集**各种古建筑照片
+
+<!-- more -->
+
+## 2022-9-15 15:06 更新
+
+![大栅栏古建筑图片1](/img/1663225745489.jpg)
+
+![大栅栏古建筑图片2](/img/1663225750904.jpg)
+
+![大栅栏古建筑图片3](/img/1663225765041.jpg)
+
+---
+
+## 2022-9-15 21:06 更新
+
+![大栅栏古建筑图片4](/img/1663247294180.jpg)
+
+![大栅栏古建筑图片5](/img/1663248034441.jpg)
+
+![大栅栏古建筑图片6](/img/1663248054125.jpg)
+
+![大栅栏古建筑图片7](/img/1663248388885.jpg)
+
+![大栅栏古建筑图片8](/img/1663248409483.jpg)
+
+![大栅栏古建筑图片9](/img/1663248459559.jpg)
+
+![大栅栏古建筑图片10](/img/1663248483161.jpg)
+
+![大栅栏古建筑图片11](/img/1663248513466.jpg)
+
+![大栅栏古建筑图片12](/img/1663248522119.jpg)]]></content>
+      <categories>
+        <category>照片</category>
+      </categories>
+      <tags>
+        <tag>古建筑</tag>
       </tags>
   </entry>
   <entry>
@@ -326,46 +468,144 @@ More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
       </categories>
   </entry>
   <entry>
-    <title>古建筑照片</title>
-    <url>//2022/gu-jian-zhu-zhao-pian/</url>
-    <content><![CDATA[> 本文长期更新，**不定期收集**各种古建筑照片
+    <title>加密测试</title>
+    <url>//2022/jia-mi-ce-shi/</url>
+    <content><![CDATA[
+114514
+
+1919810
+]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>进行一下样式测试</title>
+    <url>//2022/jin-xing-yi-xia-yang-shi-ce-shi/</url>
+    <content><![CDATA[
+~~删除线~~
+
+<mark>高亮</mark>
+
+# 一级标题
+
+## 二级标题
 
 <!-- more -->
 
-## 2022-9-15 15:06 更新
+### 三级标题
 
-![大栅栏古建筑图片1](/img/1663225745489.jpg)
+#### 四级标题
 
-![大栅栏古建筑图片2](/img/1663225750904.jpg)
+##### 五级标题
 
-![大栅栏古建筑图片3](/img/1663225765041.jpg)
+###### 六级标题
 
----
+**粗体**
 
-## 2022-9-15 21:06 更新
+*斜体*
 
-![大栅栏古建筑图片4](/img/1663247294180.jpg)
+<a class="btn" href="https://liubox0916.github.io/liubox091221.github.io/img/md.jpg" title="title">按钮</a>
 
-![大栅栏古建筑图片5](/img/1663248034441.jpg)
+<span class="label label-primary">Label</span>
 
-![大栅栏古建筑图片6](/img/1663248054125.jpg)
+<p class="note note-primary">标签</p>
 
-![大栅栏古建筑图片7](/img/1663248388885.jpg)
+| 表格 | 表格 |
+| ---- | ---- |
+|      |      |
 
-![大栅栏古建筑图片8](/img/1663248409483.jpg)
+> 引用
+>
+> 啦啦啦
 
-![大栅栏古建筑图片9](/img/1663248459559.jpg)
+```c++
+#include<iostream>
+using namespace std;
+int main(){
+	int x,y,k;
+	cin>>x>>y>>k;
+	int ai,xi,bi,yi;
+	int count=0,flag=0,ans=0;
+	if(x==y){
+		cout<<0;
+		return 0;
+	}
+	while(k--){
+		cin>>ai>>xi>>bi>>yi;	
+		if(ai==1){
+			x+=xi;
+		}
+		else if(ai==-1){
+			x-=xi;
+			if(x<0){
+				x=0;
+			}
+			}
+			if(bi==1){
+				y+=yi;
+			}
+			else if(bi==-1){
+				y-=yi;
+				if(y<0){
+				y=0;
+				}
+			}
+			count++;
+			if (x==y&&!flag){
+				ans=count;
+				flag=1;
+			}
+		} 
+		if(flag){
+			cout<<ans;
+		}
+		else{
+			cout<<-1;	
+		}	
+	return 0;
+} 
+```
 
-![大栅栏古建筑图片10](/img/1663248483161.jpg)
+1. 啦啦啦:smile:
 
-![大栅栏古建筑图片11](/img/1663248513466.jpg)
+2. 啦啦啦:cry:
 
-![大栅栏古建筑图片12](/img/1663248522119.jpg)]]></content>
+3. 啦啦啦:crab:
+
+<iframe src="//player.bilibili.com/player.html?aid=257803599&bvid=BV1BY411N7sr&cid=757465855&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"> </iframe>
+
+
+
+{% tabs First unique name %}
+
+<!-- tab First unique name 1 @ri:home-4-line -->
+
+**This is Tab 1.**
+
+<!-- endtab -->
+
+<!-- tab Icon Test @ri:cloud-line -->
+
+**This is Tab 2.**
+
+<!-- endtab -->
+
+<!-- tab -->
+
+**This is Tab 3.**
+
+<!-- endtab -->
+
+{% endtabs %}]]></content>
       <categories>
-        <category>照片</category>
+        <category>测试</category>
       </categories>
       <tags>
-        <tag>古建筑</tag>
+        <tag>test</tag>
       </tags>
   </entry>
   <entry>
@@ -788,132 +1028,6 @@ More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
       </tags>
   </entry>
   <entry>
-    <title>进行一下样式测试</title>
-    <url>//2022/jin-xing-yi-xia-yang-shi-ce-shi/</url>
-    <content><![CDATA[
-~~删除线~~
-
-<mark>高亮</mark>
-
-# 一级标题
-
-## 二级标题
-
-<!-- more -->
-
-### 三级标题
-
-#### 四级标题
-
-##### 五级标题
-
-###### 六级标题
-
-**粗体**
-
-*斜体*
-
-<a class="btn" href="https://liubox0916.github.io/liubox091221.github.io/img/md.jpg" title="title">按钮</a>
-
-<span class="label label-primary">Label</span>
-
-<p class="note note-primary">标签</p>
-
-| 表格 | 表格 |
-| ---- | ---- |
-|      |      |
-
-> 引用
->
-> 啦啦啦
-
-```c++
-#include<iostream>
-using namespace std;
-int main(){
-	int x,y,k;
-	cin>>x>>y>>k;
-	int ai,xi,bi,yi;
-	int count=0,flag=0,ans=0;
-	if(x==y){
-		cout<<0;
-		return 0;
-	}
-	while(k--){
-		cin>>ai>>xi>>bi>>yi;	
-		if(ai==1){
-			x+=xi;
-		}
-		else if(ai==-1){
-			x-=xi;
-			if(x<0){
-				x=0;
-			}
-			}
-			if(bi==1){
-				y+=yi;
-			}
-			else if(bi==-1){
-				y-=yi;
-				if(y<0){
-				y=0;
-				}
-			}
-			count++;
-			if (x==y&&!flag){
-				ans=count;
-				flag=1;
-			}
-		} 
-		if(flag){
-			cout<<ans;
-		}
-		else{
-			cout<<-1;	
-		}	
-	return 0;
-} 
-```
-
-1. 啦啦啦:smile:
-
-2. 啦啦啦:cry:
-
-3. 啦啦啦:crab:
-
-<iframe src="//player.bilibili.com/player.html?aid=257803599&bvid=BV1BY411N7sr&cid=757465855&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"> </iframe>
-
-
-
-{% tabs First unique name %}
-
-<!-- tab First unique name 1 @ri:home-4-line -->
-
-**This is Tab 1.**
-
-<!-- endtab -->
-
-<!-- tab Icon Test @ri:cloud-line -->
-
-**This is Tab 2.**
-
-<!-- endtab -->
-
-<!-- tab -->
-
-**This is Tab 3.**
-
-<!-- endtab -->
-
-{% endtabs %}]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-      <tags>
-        <tag>test</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>最令人难忘的一件事（还是瞎写的）</title>
     <url>//2022/zui-ling-ren-nan-wang-de-shi-hai-shi-xia-xie-de/</url>
     <content><![CDATA[
@@ -948,21 +1062,6 @@ int main(){
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[
-]]></content>
-  </entry>
-  <entry>
-    <title>关于本站</title>
-    <url>/about/site.html</url>
-    <content><![CDATA[> 欢迎来到我的小站呀，很高兴遇见你！🤝
-
-## 🏠 关于本站
-
-本站是一个xxs~~不要再问我为什么要打xxs了，只是打习惯了啊啊啊~~一时兴起建的一个博客，因之前的网站**没钱关闭**，所以选择用`Github Pages`再建一个，但是`Gridea`的体验真的一言难尽，所以迁移到更加好用的`Hexo`框架。目前这个网站有很多不足，正在**逐步改进**。]]></content>
-  </entry>
-  <entry>
     <title>关于我</title>
     <url>/about/index.html</url>
     <content><![CDATA[
@@ -982,13 +1081,28 @@ int main(){
 ]]></content>
   </entry>
   <entry>
+    <title>关于本站</title>
+    <url>/about/site.html</url>
+    <content><![CDATA[> 欢迎来到我的小站呀，很高兴遇见你！🤝
+
+## 🏠 关于本站
+
+本站是一个xxs~~不要再问我为什么要打xxs了，只是打习惯了啊啊啊~~一时兴起建的一个博客，因之前的网站**没钱关闭**，所以选择用`Github Pages`再建一个，但是`Gridea`的体验真的一言难尽，所以迁移到更加好用的`Hexo`框架。目前这个网站有很多不足，正在**逐步改进**。]]></content>
+  </entry>
+  <entry>
     <title></title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
+    <url>/categories/index.html</url>
+    <content><![CDATA[
+]]></content>
   </entry>
   <entry>
     <title>我的小伙伴们</title>
     <url>/links/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>
