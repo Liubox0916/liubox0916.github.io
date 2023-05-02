@@ -1,0 +1,229 @@
+<!DOCTYPE html><html lang="zh-CN"><head><!-- hexo injector head_begin start --><link href="https://fastly.jsdelivr.net/npm/hexo-tag-common@0.2.0/css/index.css" rel="stylesheet"/><!-- hexo injector head_begin end --><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0078E7"><meta name="author" content="LiuBox"><meta name="copyright" content="LiuBox"><meta name="generator" content="Hexo 6.3.0"><meta name="theme" content="hexo-theme-yun"><title>ChatGPT可不是闹着玩的！——关于我组建ChatGPT工作台的故事 | LBX的博客</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/star-markdown-css@0.4.1/dist/yun/yun-markdown.min.css"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/prism-theme-vars/base.css"><script src="https://fastly.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>function initScrollReveal() {
+  [".post-card",".markdown-body img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+}
+document.addEventListener("DOMContentLoaded", initScrollReveal);
+document.addEventListener("pjax:success", initScrollReveal);
+</script><link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script defer src="https://fastly.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script><link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.css"><script defer src="https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js"></script><script defer src="https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js"></script><script type="module">import { renderKatex } from '/js/utils.js'
+document.addEventListener("DOMContentLoaded", () => {
+  renderKatex({
+    ...{},
+    ...undefined?.options,
+  });
+});</script><link rel="icon" type="image/svg+xml" href="/yun.svg"><link rel="mask-icon" href="/yun.svg" color="#0078E7"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><link rel="preconnect" href="https://fastly.jsdelivr.net/npm/" crossorigin><script id="yun-config">
+    window.Yun = {}
+    window.CONFIG = {"hostname":"liubox0916.github.io","root":"/","title":"LBX的博客","version":"1.10.9","mode":"time","copycode":true,"page":{"isPost":true},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）"},"anonymous_image":"https://cdn.yunyoujun.cn/img/avatar/none.jpg","local_search":{"path":"/search.xml"},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true},"fireworks":{"colors":null},"vendors":{"host":"https://fastly.jsdelivr.net/npm/","darken":"https://fastly.jsdelivr.net/npm/darken@1.5.0"}};
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/hexo-theme-yun.js" type="module"></script><link rel="alternate" href="/atom.xml" title="LBX的博客" type="application/atom+xml"><meta name="description" content="前言 虽然标题说的是组建ChatGPT工作台的故事，但实际上本篇文章会推荐一些有趣的ChatGPT应用和讲述它们的配置方法。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ChatGPT可不是闹着玩的！——关于我组建ChatGPT工作台的故事">
+<meta property="og:url" content="https://liubox0916.github.io/2023/chatgpt-ke-bu-shi-nao-zhe-wan-de-guan-yu-wo-zu-jian-chatgpt-gong-zuo-tai-de-gu-shi/index.html">
+<meta property="og:site_name" content="LBX的博客">
+<meta property="og:description" content="前言 虽然标题说的是组建ChatGPT工作台的故事，但实际上本篇文章会推荐一些有趣的ChatGPT应用和讲述它们的配置方法。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://liubox0916.github.io/img/wrong_task_1.png">
+<meta property="og:image" content="https://liubox0916.github.io/img/wrong_task_2.png">
+<meta property="og:image" content="https://liubox0916.github.io/img/wrong_task_3.png">
+<meta property="og:image" content="https://liubox0916.github.io/img/happy_cat.gif">
+<meta property="og:image" content="https://liubox0916.github.io/img/right_task_1.png">
+<meta property="og:image" content="https://liubox0916.github.io/img/right_task_2_1.png">
+<meta property="og:image" content="https://liubox0916.github.io/img/right_task_2_2.png">
+<meta property="og:image" content="https://liubox0916.github.io/img/right_task_3.png">
+<meta property="og:image" content="https://liubox0916.github.io/img/test_gpt.png">
+<meta property="og:image" content="https://liubox0916.github.io/img/test_gpt_2.png">
+<meta property="og:image" content="https://liubox0916.github.io/img/right_task_4.png">
+<meta property="og:image" content="https://liubox0916.github.io/img/opencat_task_1.png">
+<meta property="og:image" content="https://liubox0916.github.io/img/test_opencat.png">
+<meta property="og:image" content="https://liubox0916.github.io/img/test_opencat_2.png">
+<meta property="og:image" content="https://liubox0916.github.io/img/test_opencat_3.png">
+<meta property="article:published_time" content="2023-04-30T10:01:32.000Z">
+<meta property="article:modified_time" content="2023-05-01T08:44:16.883Z">
+<meta property="article:author" content="LiuBox">
+<meta property="article:tag" content="编程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://liubox0916.github.io/img/wrong_task_1.png"><script type="module">import { getScript } from '/js/utils.js'
+getScript("https://fastly.jsdelivr.net/npm/mermaid/dist/mermaid.min.js", () => {
+  const mermaidOptions = {"startOnload":true}
+  mermaid.initialize(mermaidOptions);
+}, window.mermaid);
+</script><style>.mermaid{background: transparent;}</style><script>(function() {
+  if (CONFIG.mode !== 'auto') return
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+  const setting = localStorage.getItem('darken-mode') || 'auto'
+  if (setting === 'dark' || (prefersDark && setting !== 'light'))
+    document.documentElement.classList.toggle('dark', true)
+})()</script></head><body><script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script><script>// Define global variable
+IconifyProviders = {
+  // Empty prefix: overwrite default API provider configuration
+  '': {
+    // Use custom API first, use Iconify public API as backup
+    resources: [
+        'https://api.iconify.design',
+    ],
+    // Wait for 1 second before switching API hosts
+    rotate: 1000,
+  },
+};</script><script defer src="https://fastly.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js" type="module"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js" type="module"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="文章目录"><span class="icon iconify" data-icon="ri:list-ordered"></span></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="站点概览"><span class="icon iconify" data-icon="ri:passport-line"></span></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="LiuBox"><img width="96" loading="lazy" src="/yun.png" alt="LiuBox"><span class="site-author-status" title="永远相信美好的事情即将发生">😊</span></a><div class="site-author-name"><a href="/about/">LiuBox</a></div><a class="site-name" href="/about/site.html">LBX的博客</a><sub class="site-subtitle">折腾不息，生命不止</sub><div class="site-description"></div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:home-4-line"></span></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:archive-line"></span></span><span class="site-state-item-count">9</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:folder-2-line"></span></span><span class="site-state-item-count">5</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="site-state-item-count">5</span></a></div><a class="site-state-item hty-icon-button" href="/about/#comment" title="留言板"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:clipboard-line"></span></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="/liubox091221.github.io/atom.xml" title="RSS" target="_blank" style="color:#0078E7"><span class="icon iconify" data-icon="ri:rss-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/Liubox0916" title="GitHub" target="_blank" style="color:#0078E7"><span class="icon iconify" data-icon="ri:github-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://www.zhihu.com/people/lbx-42-42" title="知乎" target="_blank" style="color:#0084FF"><span class="icon iconify" data-icon="ri:zhihu-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/1802166882" title="哔哩哔哩" target="_blank" style="color:#0078E7"><span class="icon iconify" data-icon="ri:bilibili-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="/liubox091221.github.io/favicon.png" title="微信" target="_blank" style="color:#0078E7"><span class="icon iconify" data-icon="ri:wechat-2-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://twitter.com/liubox091221/" title="Twitter" target="_blank" style="color:#0078E7"><span class="icon iconify" data-icon="ri:twitter-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://lbx-chatgpt.vercel.app" title="LBX-ChatGPT" target="_blank" style="color:#0078E7"><span class="icon iconify" data-icon="ri:openai-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://t.me/liubox0916" title="Telegram" target="_blank" style="color:#0078E7"><span class="icon iconify" data-icon="ri:telegram-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="mailto:liubox091221@gmail.com" title="E-Mail" target="_blank" style="color:#0078E7"><span class="icon iconify" data-icon="ri:mail-line"></span></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="我的小伙伴们" style="color:#0078E7"><span class="icon iconify" data-icon="ri:link"></span></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><span class="icon iconify" data-icon="ri:contrast-2-line"></span></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text">第一站——ChatGPT-Next-Web：一个简洁的ChatGPT Web UI</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%94%99%E8%AF%AF%E7%A4%BA%E8%8C%83"><span class="toc-number">2.1.</span> <span class="toc-text">错误示范</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A3%E7%A1%AE%E6%96%B9%E6%B3%95"><span class="toc-number">2.2.</span> <span class="toc-text">正确方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%90%E9%97%AE"><span class="toc-number">2.2.1.</span> <span class="toc-text">提问</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4"><span class="toc-number">2.2.2.</span> <span class="toc-text">步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#fork%E6%9C%AC%E9%A1%B9%E7%9B%AE"><span class="toc-number">2.2.2.1.</span> <span class="toc-text">fork本项目</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A8vercel%E4%B8%AD%E5%AF%BC%E5%85%A5%E4%BD%A0%E5%88%9A%E5%88%9Afork%E7%9A%84%E9%A1%B9%E7%9B%AE"><span class="toc-number">2.2.2.2.</span> <span class="toc-text">在vercel中导入你刚刚fork的项目</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2"><span class="toc-number">2.2.2.3.</span> <span class="toc-text">部署</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95"><span class="toc-number">2.3.</span> <span class="toc-text">测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%8F%E7%BB%93"><span class="toc-number">2.4.</span> <span class="toc-text">小结</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">3.</span> <span class="toc-text">第二站——OpenCat：一个在苹果生态里超级好用的ChatGPT第三方客户端</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95"><span class="toc-number">3.1.</span> <span class="toc-text">配置方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95-2"><span class="toc-number">3.2.</span> <span class="toc-text">测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%8F%E7%BB%93-2"><span class="toc-number">3.3.</span> <span class="toc-text">小结</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">4.</span> <span class="toc-text">第三站——等待更新…🫠</span></a></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article" style="--smc-primary:#0078E7;"><link itemprop="mainEntityOfPage" href="https://liubox0916.github.io/2023/chatgpt-ke-bu-shi-nao-zhe-wan-de-guan-yu-wo-zu-jian-chatgpt-gong-zuo-tai-de-gu-shi/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="LiuBox"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="LBX的博客"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">ChatGPT可不是闹着玩的！——关于我组建ChatGPT工作台的故事</h1><div class="post-meta"><div class="post-time" style="display:block"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:calendar-line"></span></span> <span class="post-meta-icon-text">发表于</span> <time title="创建时间：2023-04-30 18:01:32" itemprop="dateCreated datePublished" datetime="2023-04-30T18:01:32+08:00">2023-04-30</time><span class="post-meta-divider">-</span><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:calendar-2-line"></span></span> <span class="post-meta-icon-text">更新于</span> <time title="修改时间：2023-05-01 16:44:16" itemprop="dateModified" datetime="2023-05-01T16:44:16+08:00">2023-05-01</time></div><span class="post-count"><span class="post-symbolcount"><span class="post-meta-item-icon" title="本文字数"><span class="icon iconify" data-icon="ri:file-word-line"></span></span> <span title="本文字数">1.1k</span><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="阅读时长"><span class="icon iconify" data-icon="ri:timer-line"></span></span> <span title="阅读时长">4m</span></span></span><span class="post-busuanzi"><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="阅读次数"><span class="icon iconify" data-icon="ri:eye-line"></span> <span id="busuanzi_value_page_pv"></span></span></span><div class="post-classify"><span class="post-category"> <span class="post-meta-item-icon" style="margin-right:3px;"><span class="icon iconify" data-icon="ri:folder-line"></span></span><span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category-item" href="/categories/ChatGPT/" style="--text-color:var(--hty-text-color)" itemprop="url" rel="index"><span itemprop="text">ChatGPT</span></a></span></span><span class="post-tag"><span class="post-meta-divider">-</span><a class="tag-item" href="/tags/%E7%BC%96%E7%A8%8B/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="tag-name">编程</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body"><h1>前言</h1>
+<p>虽然标题说的是<strong>组建ChatGPT工作台的故事</strong>，但实际上本篇文章会推荐一些有趣的<strong>ChatGPT应用</strong>和讲述它们的<strong>配置方法。</strong></p>
+<span id="more"></span>
+<blockquote>
+<p><strong>ChatGPT</strong>，全称<strong>聊天生成预训练转换器</strong> <strong>（英语Chat</strong> <strong>G</strong>enerative <strong>P</strong>re-trained <strong>T</strong>ransformer <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>），是<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/OpenAI" title="OpenAI">OpenAI</a>开发的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD" title="人工智能">人工智能</a><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%81%8A%E5%A4%A9%E6%A9%9F%E5%99%A8%E4%BA%BA" title="聊天机器人">聊天机器人</a>程序，于2022年11月推出。该程序使用基于<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/GPT-3" title="GPT-3">GPT-3.5</a>、<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/GPT-4" title="GPT-4">GPT-4</a>架构的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/w/index.php?title=%E5%A4%A7%E5%9E%8B%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B&amp;action=edit&amp;redlink=1">大型语言模型</a>并以<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0" title="强化学习">强化学习</a>训练。ChatGPT目前仍以文字方式交互，而除了可以用人类自然对话方式来交互，还可以用于甚为复杂的语言工作，包括自动生成<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%96%87%E6%9C%AC" title="文本">文本</a>、自动问答、自动<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%91%98%E8%A6%81" title="摘要">摘要</a>等多种任务。</p>
+</blockquote>
+<p>维基百科如是说。</p>
+<p>话不多说，让我们一起开始<strong>ChatGPT</strong>的旅程吧😎！</p>
+<h1>第一站——ChatGPT-Next-Web：一个简洁的ChatGPT Web UI</h1>
+<p>恭喜你来到了第一站🥳现在让我们来看一下它的介绍吧：</p>
+<blockquote>
+<p>一键免费部署你的<strong>私人 ChatGPT 网页应用</strong>。</p>
+</blockquote>
+<p>那么它的部署有多么简单呢🤔️下面我们来看一下：</p>
+<h2 id="错误示范">错误示范</h2>
+<blockquote>
+<p>注意⚠️以下内容均为<mark><strong>错误示例</strong></mark>，最好<strong>不要尝试</strong>，否则会导致无法更新等问题</p>
+</blockquote>
+<p><s>从前有一个人叫小田所，24岁，事学生。</s></p>
+<p>几天前，小田所偶然发现了一个名叫ChatGPT的人工智能聊天机器人🤩</p>
+<p>于是，小田所计划去GitHub找一找有没有什么可以快速部署的ChatGPT网页应用👀</p>
+<p>于是，小田所发现了<a target="_blank" rel="noopener" href="https://github.com/Yidadaa/sChatGPT-Next-Web">Yidadaa/ChatGPT-Next-Web</a>😎</p>
+<p>小田所点击了页面上的这个：</p>
+<p><img src="/img/wrong_task_1.png" alt="错误步骤1" loading="lazy"></p>
+<p>小田所<s>十分甚至九分</s>开心的按照指示点击了按钮，来到了下一个页面：</p>
+<p><img src="/img/wrong_task_2.png" alt="错误步骤2" loading="lazy"></p>
+<p>殊不知，这才是小田所噩梦的开始。</p>
+<p>此时的小田所没有意识到事情的严重性，填入了参数，点击了“部署”按钮：</p>
+<p><img src="/img/wrong_task_3.png" alt="错误步骤3" loading="lazy"></p>
+<p>进入部署的网站后，你看到了几行大字：<strong>无法更新</strong></p>
+<p><img src="/img/happy_cat.gif" alt="此处无声胜有声" loading="lazy"><em>此处无声胜有声</em></p>
+<h2 id="正确方法">正确方法</h2>
+<blockquote>
+<p>以下内容为<mark><strong>正确</strong></mark>✅，可<strong>放心参考</strong></p>
+</blockquote>
+<p><s>小田所大声哭泣，”哼哼哼嗯啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊“的声音掩埋了整栋楼。</s></p>
+<p>你振作起来，开始使用正确方法：</p>
+<blockquote>
+<h3 id="提问">提问</h3>
+<p>请问把ChatGPT-Next-Web正确部署需要几步？</p>
+</blockquote>
+<p>你答对了，正确答案是：<mark>三步</mark>。</p>
+<p>那么，<strong>现在开始</strong>吧！</p>
+<h3 id="步骤">步骤</h3>
+<h4 id="fork本项目">fork本项目</h4>
+<p><img src="/img/right_task_1.png" alt="正确步骤1" loading="lazy"></p>
+<p>你要是连<code>fork</code>项目都不会，那还来<strong>凑什么热闹</strong>？</p>
+<h4 id="在vercel中导入你刚刚fork的项目">在vercel中导入你刚刚fork的项目</h4>
+<p><img src="/img/right_task_2_1.png" alt="正确步骤2_1" loading="lazy"></p>
+<p><img src="/img/right_task_2_2.png" alt="正确步骤2_2" loading="lazy"></p>
+<p>这个简单，跟着图片<strong>一步一步来</strong>就行</p>
+<h4 id="部署">部署</h4>
+<p><img src="/img/right_task_3.png" alt="正确步骤3" loading="lazy"></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>OPENAI_API_KEY</code></strong></td>
+<td>填入你的<code>OpenAI API Key</code></td>
+</tr>
+<tr>
+<td><code>CODE</code></td>
+<td>（<strong>可选</strong> ）访问密码</td>
+</tr>
+</tbody>
+</table>
+<p>填好数据，点按钮<strong>就行了</strong></p>
+<h2 id="测试">测试</h2>
+<p><img src="/img/test_gpt.png" alt="测试效果" loading="lazy"></p>
+<h2 id="小结">小结</h2>
+<p>可以从<mark>测试</mark>部分看到ChatGPT的回答<strong>很有条理</strong>🎉，而且本项目的UI也<s>非常的好看，非常的美丽</s>，另外它还有一个称为<mark>面具</mark>的功能，可以自由选取需要的人格。</p>
+<p><img src="/img/test_gpt_2.png" alt="面具" loading="lazy"></p>
+<p>因此我<strong>非常推荐</strong>大家使用此项目。</p>
+<p>那么，这么好的东西可以在哪里体验呢？</p>
+<div class="tag-common tabs" id="first-unique-name"><ul class="nav-tabs"><li class="tab active"><a data-target="first-unique-name-1"><span class="iconify icon" data-icon="ri:openai-line"></span>方式一</a></li><li class="tab"><a data-target="first-unique-name-2"><span class="iconify icon" data-icon="ri:openai-fill"></span>方式2</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><p><strong>推荐</strong></p>
+<p>你可以直接在我的网站侧边栏中找到我自己建立的Demo：</p>
+<p><img src="/img/right_task_4.png" alt="步骤" loading="lazy"></p>
+<p>或<strong>直接</strong><a target="_blank" rel="noopener" href="https://lbx-chat-gpt.vercel.app/">访问链接</a></p></div><div class="tab-pane" id="first-unique-name-2"><p>访问<a target="_blank" rel="noopener" href="https://chat-gpt-next-web.vercel.app/">官方Demo</a></p></div></div></div>
+<p>那么接下来，我们将要去往——<strong>神秘</strong>的第二站。</p>
+<p><s>所有系统全部启动启动启动！还有这个！乐迪！</s></p>
+<p><s>现在，是飞行✈️时间！</s></p>
+<h1>第二站——OpenCat：一个在苹果生态里超级好用的ChatGPT第三方客户端</h1>
+<p><s>到达本文第二站——OpenCat！太美丽了家人们，还是看看远处的雪山吧家人们🤩～</s></p>
+<blockquote>
+<p>OpenCat是一个基于<code>ChatGPT API</code>的运行于苹果设备上的ChatGPT<strong>第三方客户端</strong>。</p>
+</blockquote>
+<p>那么，接下来就让我们学习一下配置方法吧😎！</p>
+<h2 id="配置方法">配置方法</h2>
+<p>其实就是超级简单的把<code>OpenAI API Key</code>填入到框里而已，也没什么好说的🫠</p>
+<p><img src="/img/opencat_task_1.png" alt="配置方法1" loading="lazy"></p>
+<h2 id="测试-2">测试</h2>
+<p><img src="/img/test_opencat.png" alt="测试效果" loading="lazy"></p>
+<h2 id="小结-2">小结</h2>
+<p>可以从<mark>测试</mark>部分看到OpenCat的界面<strong>十分美观</strong>🎉，而且因为使用的是<code>ChatGPT API</code>，所以访问速度也<s>飞快的很呐</s>，另外它还有<mark>AI工坊</mark></p>
+<p><img src="/img/test_opencat_2.png" alt="AI工坊" loading="lazy"></p>
+<p>和<mark>生成图片</mark>的功能。</p>
+<p><img src="/img/test_opencat_3.png" alt="生成图片" loading="lazy"></p>
+<p>另外，它还具有十分详尽的<a target="_blank" rel="noopener" href="https://opencat.app/docs/zh-CN/help">帮助文档</a>😄</p>
+<p>所以在苹果生态下，我也<strong>十分推荐</strong>这一款软件。</p>
+<p>那么接下来，我们就要去往第三站了——</p>
+<p><s>抓紧了，wryyyyyyyyyyyyy～</s></p>
+<h1>第三站——等待更新…🫠</h1>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>Roose, Kevin. <a target="_blank" rel="noopener" href="https://www.nytimes.com/2022/12/05/technology/chatgpt-ai-twitter.html">The Brilliance and Weirdness of ChatGPT</a>. The New York Times. 2022-12-05 [2022-12-26]. （原始内容<a target="_blank" rel="noopener" href="https://web.archive.org/web/20230118134332/https://www.nytimes.com/2022/12/05/technology/chatgpt-ai-twitter.html">存档</a>于2023-01-18）. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+</div></section><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>LiuBox</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="https://liubox0916.github.io/2023/chatgpt-ke-bu-shi-nao-zhe-wan-de-guan-yu-wo-zu-jian-chatgpt-gong-zuo-tai-de-gu-shi/" title="ChatGPT可不是闹着玩的！——关于我组建ChatGPT工作台的故事">https://liubox0916.github.io/2023/chatgpt-ke-bu-shi-nao-zhe-wan-de-guan-yu-wo-zu-jian-chatgpt-gong-zuo-tai-de-gu-shi/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><span class="icon iconify" data-icon="ri:creative-commons-line"></span><span class="icon iconify" data-icon="ri:creative-commons-by-line"></span><span class="icon iconify" data-icon="ri:creative-commons-nc-line"></span><span class="icon iconify" data-icon="ri:creative-commons-sa-line"></span></a> 许可协议。</li></ul></article><div class="post-nav"><div class="post-nav-item"></div><div class="post-nav-item"><a class="post-nav-next" href="/2022/LBX-Browsers/" rel="next" title="自己优化的浏览器系列"><span class="post-nav-text">自己优化的浏览器系列</span><span class="icon iconify" data-icon="ri:arrow-right-s-line"></span></a></div></div></div><div class="hty-card" id="comment"><style>.utterances {
+  max-width: 100%;
+}</style><script src="https://giscus.app/client.js" data-repo="Liubox0916/liubox091221.github.io" data-repo-id="R_kgDOIBCcqw" data-category="General" data-category-id="DIC_kwDOIBCcq84CRslI" data-mapping="pathname" data-reactions-enabled="1" data-emit-metadata="0" data-theme="light" crossorigin="anonymous" async></script></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2020 – 2023 </span><span class="with-love" id="animate"><span class="icon iconify" data-icon="ri:link"></span></span><span class="author"> LiuBox</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v6.3.0</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.10.9</span></div><div class="live-time"><span>本博客已波澜起伏地运行</span><span id="display_live_time"></span><script>function blog_live_time() {
+  setTimeout(blog_live_time, 1000);
+  const start = new Date('2020-04-30T00:00:00');
+  const now = new Date();
+  const timeDiff = (now.getTime() - start.getTime());
+  const msPerMinute = 60 * 1000;
+  const msPerHour = 60 * msPerMinute;
+  const msPerDay = 24 * msPerHour;
+  const passDay = Math.floor(timeDiff / msPerDay);
+  const passHour = Math.floor((timeDiff % msPerDay) / 60 / 60 / 1000);
+  const passMinute = Math.floor((timeDiff % msPerHour) / 60 / 1000);
+  const passSecond = Math.floor((timeDiff % msPerMinute) / 1000);
+  display_live_time.innerHTML = ` ${passDay} 天 ${passHour} 小时 ${passMinute} 分 ${passSecond} 秒`;
+}
+blog_live_time();
+</script></div><div id="busuanzi"><span id="busuanzi_container_site_uv" title="总访客量"><span><span class="icon iconify" data-icon="ri:user-line"></span></span><span id="busuanzi_value_site_uv"></span></span><span class="footer-separator">|</span><span id="busuanzi_container_site_pv" title="总访问量"><span><span class="icon iconify" data-icon="ri:eye-line"></span></span><span id="busuanzi_value_site_pv"></span></span><script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></footer></div><a class="hty-icon-button" id="back-to-top" aria-label="back-to-top" href="#"><span class="icon iconify" data-icon="ri:arrow-up-s-line"></span><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a><a class="popup-trigger hty-icon-button icon-search" id="search" href="javascript:;" title="搜索"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:search-line"></span></span></a><script>window.addEventListener("DOMContentLoaded", () => {
+  // Handle and trigger popup window
+  document.querySelector(".popup-trigger").addEventListener("click", () => {
+    document.querySelector(".popup").classList.add("show");
+    setTimeout(() => {
+      document.querySelector(".search-input").focus();
+    }, 100);
+  });
+
+  // Monitor main search box
+  const onPopupClose = () => {
+    document.querySelector(".popup").classList.remove("show");
+  };
+
+  document.querySelector(".popup-btn-close").addEventListener("click", () => {
+    onPopupClose();
+  });
+
+  window.addEventListener("keyup", event => {
+    if (event.key === "Escape") {
+      onPopupClose();
+    }
+  });
+});
+</script><script src="https://fastly.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script><script src="/js/search/local-search.js" defer type="module"></script><div class="popup search-popup"><div class="search-header"><span class="popup-btn-close close-icon hty-icon-button"><span class="icon iconify" data-icon="ri:close-line"></span></span></div><div class="search-input-container"><input class="search-input" id="local-search-input" type="text" placeholder="搜索..." value=""></div><div class="search-result-container"></div></div><script>function initMourn() {
+  const date = new Date();
+  const today = (date.getMonth() + 1) + "-" + date.getDate()
+  const mourn_days = ["4-4","9-18"]
+  if (mourn_days.includes(today)) {
+    document.documentElement.style.filter = "grayscale(1)";
+  }
+}
+initMourn();</script><!-- hexo injector body_end start --><script src="https://fastly.jsdelivr.net/npm/hexo-tag-common@0.2.0/js/index.js"></script><!-- hexo injector body_end end --></body></html>
