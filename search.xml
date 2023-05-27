@@ -1,36 +1,189 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>2022《开学第一课》读后感（瞎写的了属于是）</title>
-    <url>//2022/2022-kai-xue-di-yi-ke-du-hou-gan-xia-xie-de-le-shu-yu-shi/</url>
+    <title>ChatGPT可不是闹着玩的！——关于我组建ChatGPT工作台的故事</title>
+    <url>//2023/chatgpt-ke-bu-shi-nao-zhe-wan-de-guan-yu-wo-zu-jian-chatgpt-gong-zuo-tai-de-gu-shi/</url>
     <content><![CDATA[
-> <mark>本篇作文**纯属凑数**以及测试，**并非本人真实水平**</mark>
+# 前言
 
-伴随着一阵悦耳动听的伴奏，我又迎来了新的学期。《开学第一课》，好久不见，又一次心潮久久未能平静……
+虽然标题说的是**组建ChatGPT工作台的故事**，但实际上本篇文章会推荐一些有趣的**ChatGPT应用**和讲述它们的**配置方法。**
 
 <!-- more -->
 
-一上来，主持人便开门见山地让**人民英雄，国家荣誉称号获得者，中国工程院院士，天津中药大学名誉校长**张伯礼老师为我们讲解“生态校园”的概念。所谓“生态校园”，其实就是由中共中央国务院和教育部一起提出来的一个规划，这个规划有三个内容：
+> **ChatGPT**，全称**聊天生成预训练转换器** **（英语Chat** **G**enerative **P**re-trained **T**ransformer [^1]），是[OpenAI](https://zh.wikipedia.org/wiki/OpenAI "OpenAI")开发的[人工智能](https://zh.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD "人工智能")[聊天机器人](https://zh.wikipedia.org/wiki/%E8%81%8A%E5%A4%A9%E6%A9%9F%E5%99%A8%E4%BA%BA "聊天机器人")程序，于2022年11月推出。该程序使用基于[GPT-3.5](https://zh.wikipedia.org/wiki/GPT-3 "GPT-3")、[GPT-4](https://zh.wikipedia.org/wiki/GPT-4 "GPT-4")架构的[大型语言模型](https://zh.wikipedia.org/w/index.php?title=%E5%A4%A7%E5%9E%8B%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B\&action=edit\&redlink=1)并以[强化学习](https://zh.wikipedia.org/wiki/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0 "强化学习")训练。ChatGPT目前仍以文字方式交互，而除了可以用人类自然对话方式来交互，还可以用于甚为复杂的语言工作，包括自动生成[文本](https://zh.wikipedia.org/wiki/%E6%96%87%E6%9C%AC "文本")、自动问答、自动[摘要](https://zh.wikipedia.org/wiki/%E6%91%98%E8%A6%81 "摘要")等多种任务。
 
-> “一个是**绿色校园**，一个是**文化校园**，还有一个就是**文明校园**。十八大以来，党中央非常重视生态文明的建设，**人要尊重自然，还要保护自然。**人们**过度的追求经济，追求产业的发展，破坏了生态**，所以总书记提出来的‘**绿水青山就是金山银山**’也是这种观点。”
+维基百科如是说。
 
-张伯礼老师说到。
+话不多说，让我们一起开始**ChatGPT**的旅程吧😎！
 
-讲完了“生态校园”的概念，主持人便直截了当的转到对津南区“**小站稻**”生长的生态环境的介绍。主持人介绍说：
+# 第一站——ChatGPT-Next-Web：一个简洁的ChatGPT Web UI
 
-> “这离不开**习近平同志对天津三个着力重要要求和一系列重要指示批示精神**。生态环境质量**持续改善**，**875**平方公里湿地**升级保护**，成为绿色发展**标志性**样板，**美丽天津**建设取得重大进展。”
+恭喜你来到了第一站🥳现在让我们来看一下它的介绍吧：
 
-随后，主持人邀请**天津大学地球系统科学学院副院长**李斯亮老师来为我们讲解坚持**绿色发展**收获的累累硕果。通过讲解，我明白了我们应当**用我们的实际行动守护家园**，要**科学地进行绿色高质量发展**。在这段介绍里，我还了解到了一种全新的”稻蟹混养“方式。这种方式不仅能让蟹吃掉杂虫，螃蟹的粪便还能够**大大增加土壤的肥力**，增加稻田的**回报率**。
+> 一键免费部署你的**私人 ChatGPT 网页应用**。
 
-接着，节目里也播出了许多有趣的内容，但全部都围绕着一个主题：“**保护环境**”。
+那么它的部署有多么简单呢🤔️下面我们来看一下：
 
-看完了节目，我的内心久久不能平静。正如节目中说的那样，……在未来的学习生活中，我会尽自己的**最大努力**去**保护，爱护**生态环境！
+## 错误示范
+
+> 注意⚠️以下内容均为<mark>**错误示例**</mark>，最好**不要尝试**，否则会导致无法更新等问题
+
+~~从前有一个人叫小田所，24岁，事学生。~~
+
+几天前，小田所偶然发现了一个名叫ChatGPT的人工智能聊天机器人🤩
+
+于是，小田所计划去GitHub找一找有没有什么可以快速部署的ChatGPT网页应用👀
+
+于是，小田所发现了[Yidadaa/ChatGPT-Next-Web](https://github.com/Yidadaa/sChatGPT-Next-Web)😎
+
+小田所点击了页面上的这个：
+
+![错误步骤1](/img/wrong_task_1.png)
+
+小田所~~十分甚至九分~~开心的按照指示点击了按钮，来到了下一个页面：
+
+![错误步骤2](/img/wrong_task_2.png)
+
+殊不知，这才是小田所噩梦的开始。
+
+此时的小田所没有意识到事情的严重性，填入了参数，点击了“部署”按钮：
+
+![错误步骤3](/img/wrong_task_3.png)
+
+进入部署的网站后，你看到了几行大字：**无法更新**
+
+![此处无声胜有声](/img/happy_cat.gif)_此处无声胜有声_
+
+## 正确方法
+
+>以下内容为<mark>**正确**</mark>✅，可**放心参考**
+
+~~小田所大声哭泣，”哼哼哼嗯啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊“的声音掩埋了整栋楼。~~
+
+你振作起来，开始使用正确方法：
+
+> ### 提问
+>
+> 请问把ChatGPT-Next-Web正确部署需要几步？
+
+你答对了，正确答案是：<mark>三步</mark>。
+
+那么，**现在开始**吧！
+
+### 步骤
+
+#### fork本项目
+
+![正确步骤1](/img/right_task_1.png)
+
+你要是连`fork`项目都不会，那还来**凑什么热闹**？
+
+#### 在vercel中导入你刚刚fork的项目
+
+![正确步骤2\_1](/img/right_task_2_1.png)
+
+![正确步骤2\_2](/img/right_task_2_2.png)
+
+这个简单，跟着图片**一步一步来**就行
+
+#### 部署
+
+![正确步骤3](/img/right_task_3.png)
+
+| 名称                 | 用法                     |
+| -------------------- | ------------------------ |
+| **`OPENAI_API_KEY`** | 填入你的`OpenAI API Key` |
+| `CODE`               | （**可选** ）访问密码    |
+
+填好数据，点按钮**就行了**
+
+## 测试
+
+![测试效果](/img/test_gpt.png)
+
+## 小结
+
+可以从<mark>测试</mark>部分看到ChatGPT的回答**很有条理**🎉，而且本项目的UI也~~非常的好看，非常的美丽~~，另外它还有一个称为<mark>面具</mark>的功能，可以自由选取需要的人格。
+
+![面具](/img/test_gpt_2.png)
+
+因此我**非常推荐**大家使用此项目。
+
+那么，这么好的东西可以在哪里体验呢？
+
+{% tabs First unique name %}
+
+<!-- tab 方式一 @ri:openai-line -->
+
+**推荐**
+
+你可以直接在我的网站侧边栏中找到我自己建立的Demo：
+
+![步骤](/img/right_task_4.png)
+
+或**直接**[访问链接](https://lbx-chat-gpt.vercel.app/)
+
+<!-- endtab -->
+
+<!-- tab 方式2 @ri:openai-fill-->
+
+访问[官方Demo](https://chat-gpt-next-web.vercel.app/)
+
+<!-- endtab -->
+
+{% endtabs %}
+
+那么接下来，我们将要去往——**神秘**的第二站。
+
+~~所有系统全部启动启动启动！还有这个！乐迪！~~
+
+~~现在，是飞行✈️时间！~~
+
+# 第二站——OpenCat：一个在苹果生态里超级好用的ChatGPT第三方客户端
+
+~~到达本文第二站——OpenCat！太美丽了家人们，还是看看远处的雪山吧家人们🤩～~~
+
+>OpenCat是一个基于`ChatGPT API`的运行于苹果设备上的ChatGPT**第三方客户端**。
+
+那么，接下来就让我们学习一下配置方法吧😎！
+
+## 配置方法
+
+其实就是超级简单的把`OpenAI API Key`填入到框里而已，也没什么好说的🫠
+
+![配置方法1](/img/opencat_task_1.png)
+
+## 测试
+
+![测试效果](/img/test_opencat.png)
+
+## 小结
+
+可以从<mark>测试</mark>部分看到OpenCat的界面**十分美观**🎉，而且因为使用的是`ChatGPT API`，所以访问速度也~~飞快的很呐~~，另外它还有<mark>AI工坊</mark>
+
+![AI工坊](/img/test_opencat_2.png)
+
+和<mark>生成图片</mark>的功能。
+
+![生成图片](/img/test_opencat_3.png)
+
+另外，它还具有十分详尽的[帮助文档](https://opencat.app/docs/zh-CN/help)😄
+
+所以在苹果生态下，我也**十分推荐**这一款软件。
+
+那么接下来，我们就要去往第三站了——
+
+~~抓紧了，wryyyyyyyyyyyyy～~~
+
+# 第三站——等待更新...🫠
+
+[^1]: Roose, Kevin. [The Brilliance and Weirdness of ChatGPT](https://www.nytimes.com/2022/12/05/technology/chatgpt-ai-twitter.html). The New York Times. 2022-12-05 \[2022-12-26]. （原始内容[存档](https://web.archive.org/web/20230118134332/https://www.nytimes.com/2022/12/05/technology/chatgpt-ai-twitter.html)于2023-01-18）.
 ]]></content>
       <categories>
-        <category>瞎整的</category>
+        <category>ChatGPT</category>
       </categories>
       <tags>
-        <tag>作文</tag>
+        <tag>编程</tag>
       </tags>
   </entry>
   <entry>
@@ -267,189 +420,36 @@
       </tags>
   </entry>
   <entry>
-    <title>ChatGPT可不是闹着玩的！——关于我组建ChatGPT工作台的故事</title>
-    <url>//2023/chatgpt-ke-bu-shi-nao-zhe-wan-de-guan-yu-wo-zu-jian-chatgpt-gong-zuo-tai-de-gu-shi/</url>
+    <title>2022《开学第一课》读后感（瞎写的了属于是）</title>
+    <url>//2022/2022-kai-xue-di-yi-ke-du-hou-gan-xia-xie-de-le-shu-yu-shi/</url>
     <content><![CDATA[
-# 前言
+> <mark>本篇作文**纯属凑数**以及测试，**并非本人真实水平**</mark>
 
-虽然标题说的是**组建ChatGPT工作台的故事**，但实际上本篇文章会推荐一些有趣的**ChatGPT应用**和讲述它们的**配置方法。**
+伴随着一阵悦耳动听的伴奏，我又迎来了新的学期。《开学第一课》，好久不见，又一次心潮久久未能平静……
 
 <!-- more -->
 
-> **ChatGPT**，全称**聊天生成预训练转换器** **（英语Chat** **G**enerative **P**re-trained **T**ransformer [^1]），是[OpenAI](https://zh.wikipedia.org/wiki/OpenAI "OpenAI")开发的[人工智能](https://zh.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD "人工智能")[聊天机器人](https://zh.wikipedia.org/wiki/%E8%81%8A%E5%A4%A9%E6%A9%9F%E5%99%A8%E4%BA%BA "聊天机器人")程序，于2022年11月推出。该程序使用基于[GPT-3.5](https://zh.wikipedia.org/wiki/GPT-3 "GPT-3")、[GPT-4](https://zh.wikipedia.org/wiki/GPT-4 "GPT-4")架构的[大型语言模型](https://zh.wikipedia.org/w/index.php?title=%E5%A4%A7%E5%9E%8B%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B\&action=edit\&redlink=1)并以[强化学习](https://zh.wikipedia.org/wiki/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0 "强化学习")训练。ChatGPT目前仍以文字方式交互，而除了可以用人类自然对话方式来交互，还可以用于甚为复杂的语言工作，包括自动生成[文本](https://zh.wikipedia.org/wiki/%E6%96%87%E6%9C%AC "文本")、自动问答、自动[摘要](https://zh.wikipedia.org/wiki/%E6%91%98%E8%A6%81 "摘要")等多种任务。
+一上来，主持人便开门见山地让**人民英雄，国家荣誉称号获得者，中国工程院院士，天津中药大学名誉校长**张伯礼老师为我们讲解“生态校园”的概念。所谓“生态校园”，其实就是由中共中央国务院和教育部一起提出来的一个规划，这个规划有三个内容：
 
-维基百科如是说。
+> “一个是**绿色校园**，一个是**文化校园**，还有一个就是**文明校园**。十八大以来，党中央非常重视生态文明的建设，**人要尊重自然，还要保护自然。**人们**过度的追求经济，追求产业的发展，破坏了生态**，所以总书记提出来的‘**绿水青山就是金山银山**’也是这种观点。”
 
-话不多说，让我们一起开始**ChatGPT**的旅程吧😎！
+张伯礼老师说到。
 
-# 第一站——ChatGPT-Next-Web：一个简洁的ChatGPT Web UI
+讲完了“生态校园”的概念，主持人便直截了当的转到对津南区“**小站稻**”生长的生态环境的介绍。主持人介绍说：
 
-恭喜你来到了第一站🥳现在让我们来看一下它的介绍吧：
+> “这离不开**习近平同志对天津三个着力重要要求和一系列重要指示批示精神**。生态环境质量**持续改善**，**875**平方公里湿地**升级保护**，成为绿色发展**标志性**样板，**美丽天津**建设取得重大进展。”
 
-> 一键免费部署你的**私人 ChatGPT 网页应用**。
+随后，主持人邀请**天津大学地球系统科学学院副院长**李斯亮老师来为我们讲解坚持**绿色发展**收获的累累硕果。通过讲解，我明白了我们应当**用我们的实际行动守护家园**，要**科学地进行绿色高质量发展**。在这段介绍里，我还了解到了一种全新的”稻蟹混养“方式。这种方式不仅能让蟹吃掉杂虫，螃蟹的粪便还能够**大大增加土壤的肥力**，增加稻田的**回报率**。
 
-那么它的部署有多么简单呢🤔️下面我们来看一下：
+接着，节目里也播出了许多有趣的内容，但全部都围绕着一个主题：“**保护环境**”。
 
-## 错误示范
-
-> 注意⚠️以下内容均为<mark>**错误示例**</mark>，最好**不要尝试**，否则会导致无法更新等问题
-
-~~从前有一个人叫小田所，24岁，事学生。~~
-
-几天前，小田所偶然发现了一个名叫ChatGPT的人工智能聊天机器人🤩
-
-于是，小田所计划去GitHub找一找有没有什么可以快速部署的ChatGPT网页应用👀
-
-于是，小田所发现了[Yidadaa/ChatGPT-Next-Web](https://github.com/Yidadaa/sChatGPT-Next-Web)😎
-
-小田所点击了页面上的这个：
-
-![错误步骤1](/img/wrong_task_1.png)
-
-小田所~~十分甚至九分~~开心的按照指示点击了按钮，来到了下一个页面：
-
-![错误步骤2](/img/wrong_task_2.png)
-
-殊不知，这才是小田所噩梦的开始。
-
-此时的小田所没有意识到事情的严重性，填入了参数，点击了“部署”按钮：
-
-![错误步骤3](/img/wrong_task_3.png)
-
-进入部署的网站后，你看到了几行大字：**无法更新**
-
-![此处无声胜有声](/img/happy_cat.gif)_此处无声胜有声_
-
-## 正确方法
-
->以下内容为<mark>**正确**</mark>✅，可**放心参考**
-
-~~小田所大声哭泣，”哼哼哼嗯啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊“的声音掩埋了整栋楼。~~
-
-你振作起来，开始使用正确方法：
-
-> ### 提问
->
-> 请问把ChatGPT-Next-Web正确部署需要几步？
-
-你答对了，正确答案是：<mark>三步</mark>。
-
-那么，**现在开始**吧！
-
-### 步骤
-
-#### fork本项目
-
-![正确步骤1](/img/right_task_1.png)
-
-你要是连`fork`项目都不会，那还来**凑什么热闹**？
-
-#### 在vercel中导入你刚刚fork的项目
-
-![正确步骤2\_1](/img/right_task_2_1.png)
-
-![正确步骤2\_2](/img/right_task_2_2.png)
-
-这个简单，跟着图片**一步一步来**就行
-
-#### 部署
-
-![正确步骤3](/img/right_task_3.png)
-
-| 名称                 | 用法                     |
-| -------------------- | ------------------------ |
-| **`OPENAI_API_KEY`** | 填入你的`OpenAI API Key` |
-| `CODE`               | （**可选** ）访问密码    |
-
-填好数据，点按钮**就行了**
-
-## 测试
-
-![测试效果](/img/test_gpt.png)
-
-## 小结
-
-可以从<mark>测试</mark>部分看到ChatGPT的回答**很有条理**🎉，而且本项目的UI也~~非常的好看，非常的美丽~~，另外它还有一个称为<mark>面具</mark>的功能，可以自由选取需要的人格。
-
-![面具](/img/test_gpt_2.png)
-
-因此我**非常推荐**大家使用此项目。
-
-那么，这么好的东西可以在哪里体验呢？
-
-{% tabs First unique name %}
-
-<!-- tab 方式一 @ri:openai-line -->
-
-**推荐**
-
-你可以直接在我的网站侧边栏中找到我自己建立的Demo：
-
-![步骤](/img/right_task_4.png)
-
-或**直接**[访问链接](https://lbx-chat-gpt.vercel.app/)
-
-<!-- endtab -->
-
-<!-- tab 方式2 @ri:openai-fill-->
-
-访问[官方Demo](https://chat-gpt-next-web.vercel.app/)
-
-<!-- endtab -->
-
-{% endtabs %}
-
-那么接下来，我们将要去往——**神秘**的第二站。
-
-~~所有系统全部启动启动启动！还有这个！乐迪！~~
-
-~~现在，是飞行✈️时间！~~
-
-# 第二站——OpenCat：一个在苹果生态里超级好用的ChatGPT第三方客户端
-
-~~到达本文第二站——OpenCat！太美丽了家人们，还是看看远处的雪山吧家人们🤩～~~
-
->OpenCat是一个基于`ChatGPT API`的运行于苹果设备上的ChatGPT**第三方客户端**。
-
-那么，接下来就让我们学习一下配置方法吧😎！
-
-## 配置方法
-
-其实就是超级简单的把`OpenAI API Key`填入到框里而已，也没什么好说的🫠
-
-![配置方法1](/img/opencat_task_1.png)
-
-## 测试
-
-![测试效果](/img/test_opencat.png)
-
-## 小结
-
-可以从<mark>测试</mark>部分看到OpenCat的界面**十分美观**🎉，而且因为使用的是`ChatGPT API`，所以访问速度也~~飞快的很呐~~，另外它还有<mark>AI工坊</mark>
-
-![AI工坊](/img/test_opencat_2.png)
-
-和<mark>生成图片</mark>的功能。
-
-![生成图片](/img/test_opencat_3.png)
-
-另外，它还具有十分详尽的[帮助文档](https://opencat.app/docs/zh-CN/help)😄
-
-所以在苹果生态下，我也**十分推荐**这一款软件。
-
-那么接下来，我们就要去往第三站了——
-
-~~抓紧了，wryyyyyyyyyyyyy～~~
-
-# 第三站——等待更新...🫠
-
-[^1]: Roose, Kevin. [The Brilliance and Weirdness of ChatGPT](https://www.nytimes.com/2022/12/05/technology/chatgpt-ai-twitter.html). The New York Times. 2022-12-05 \[2022-12-26]. （原始内容[存档](https://web.archive.org/web/20230118134332/https://www.nytimes.com/2022/12/05/technology/chatgpt-ai-twitter.html)于2023-01-18）.
+看完了节目，我的内心久久不能平静。正如节目中说的那样，……在未来的学习生活中，我会尽自己的**最大努力**去**保护，爱护**生态环境！
 ]]></content>
       <categories>
-        <category>ChatGPT</category>
+        <category>瞎整的</category>
       </categories>
       <tags>
-        <tag>编程</tag>
+        <tag>作文</tag>
       </tags>
   </entry>
   <entry>
@@ -496,6 +496,21 @@
       </tags>
   </entry>
   <entry>
+    <title>加密测试</title>
+    <url>//2022/jia-mi-ce-shi/</url>
+    <content><![CDATA[
+114514
+
+1919810
+]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>test</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>//2022/hello-world/</url>
     <content><![CDATA[Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
@@ -539,21 +554,6 @@ More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
       <categories>
         <category>测试</category>
       </categories>
-  </entry>
-  <entry>
-    <title>加密测试</title>
-    <url>//2022/jia-mi-ce-shi/</url>
-    <content><![CDATA[
-114514
-
-1919810
-]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-      <tags>
-        <tag>test</tag>
-      </tags>
   </entry>
   <entry>
     <title>进行一下样式测试</title>
@@ -1135,12 +1135,6 @@ int main(){
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[
-]]></content>
-  </entry>
-  <entry>
     <title>关于我</title>
     <url>/about/index.html</url>
     <content><![CDATA[
@@ -1167,6 +1161,12 @@ int main(){
 ## 🏠 关于本站
 
 本站是一个xxs~~不要再问我为什么要打xxs了，只是打习惯了啊啊啊~~一时兴起建的一个博客，因之前的网站**没钱关闭**，所以选择用`Github Pages`再建一个，但是`Gridea`的体验真的一言难尽，所以迁移到更加好用的`Hexo`框架。目前这个网站有很多不足，正在**逐步改进**。]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[
+]]></content>
   </entry>
   <entry>
     <title>我的小伙伴们</title>
